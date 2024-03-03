@@ -8,4 +8,6 @@
 * 打开webofscience作者的引用报告界面：https://webofscience.clarivate.cn/wos/woscc/citation-report/*  
   > &ensp;&ensp;你可以根据实际情况调整脚本`@match`一栏  
   > &ensp;&ensp;如未显示，请尝试刷新网页
- 
+### 预览  
+![image](https://github.com/LuDreamst/webofscience_gindex_JavaScript/assets/53106447/9aaad44e-7cb7-440f-8f2c-759849e01c3d)
+
