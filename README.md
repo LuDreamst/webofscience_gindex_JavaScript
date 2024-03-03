@@ -1,0 +1,2 @@
+# webofscience_gindex_JavaScript
+一个用以计算并显示webofscience作者的g指数（g-index）的JavaScript脚本
