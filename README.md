@@ -9,5 +9,11 @@
   > &ensp;&ensp;你可以根据实际情况调整脚本`@match`一栏  
   > &ensp;&ensp;如未显示，请尝试刷新网页
 ### 预览  
-![image](https://github.com/LuDreamst/webofscience_gindex_JavaScript/assets/53106447/9aaad44e-7cb7-440f-8f2c-759849e01c3d)
+![image](https://github.com/LuDreamst/webofscience_gindex_JavaScript/assets/53106447/9aaad44e-7cb7-440f-8f2c-759849e01c3d)  
+### 新增  
+新增一个button，手动点击“Calculate G-index”，显示G-index (见[gindex_button.js](gindex_button.js))  
+![931107e943dae586aa974f7d4bb6aac1](https://github.com/LuDreamst/webofscience_gindex_JavaScript/assets/53106447/10ae4fb4-1539-44d0-97e6-39e38ec74584)
+
+
+
 
