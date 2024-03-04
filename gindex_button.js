@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name         webofscience_gindex
+// @name         webofscience_gindex_button
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Display a floating window to show g-index
 // @author       LuDreamst with copilot
 // @match        https://webofscience.clarivate.cn/wos/woscc/citation-report/*
+// @match        https://webofscience.clarivate.cn/wos/alldb/citation-report/*
 // @grant        none
 // ==/UserScript==
 
@@ -17,13 +18,13 @@
     function calculateGIndex(citations) {
         let sumcitations = 0;
         let i;
-        for (i = 0; i < citations.length; i++) {
+        for (i = 1; i < citations.length; i++) {
             sumcitations += citations[i];
             if (sumcitations < (i+1)*(i+1)) {
                 break;
             }
         }
-        return i + 1;
+        return i;
     }
 
     // 创建一个新的按钮
@@ -38,8 +39,7 @@
     calculateButton.addEventListener('click', function() {
         try {
             // 获取所有引用
-            var citationElements = document.querySelectorAll("#snPubs > table > tr > td:nth-child(8) > a")
-            console.log('Citation elements:', citationElements);
+            var citationElements = document.querySelectorAll("#snPubs > table > tr > td:nth-child(8)")
             var citations = Array.from(citationElements).map(el => Number(el.textContent));
             console.log('Citations:', citations);
             var gIndex = calculateGIndex(citations);
@@ -60,6 +60,6 @@
             console.log('An error occurred:', error);
         }
     });
-
+    
     console.log('Script ended');
 })();
